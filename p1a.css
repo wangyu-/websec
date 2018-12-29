@@ -1,0 +1,28 @@
+table{
+    font-size: 13px;
+    font-family: "Tahoma", monospace;
+    border-spacing: 1px;
+}
+
+
+table tr:nth-child(2n){
+    background-color: #dfe1e7;
+}
+
+table tr:nth-child(2n+1){
+    background-color: #eeeff2;
+}
+
+table tr:nth-child(1){
+    color: white;
+    background-color: #687291;
+}
+table tr td:nth-child(n+4){
+    text-align: center;
+}
+
+table tr:last-child
+{
+    display: none;
+}
+

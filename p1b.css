@@ -1,0 +1,23 @@
+table{
+    font-size: 13px;
+    font-family: "Tahoma", monospace;
+    padding: 20px;
+    border: solid 10px #d0d0ff;
+}
+
+
+table tr td:nth-child(n+4){
+    text-align: center;
+}
+
+table tr:nth-child(1) th:nth-child(1){
+    text-align: left;
+}
+
+table tr:last-child {
+    font-weight:bold;
+}
+
+table tr:nth-last-child(2) td{
+    border-top:solid 3px black;
+}

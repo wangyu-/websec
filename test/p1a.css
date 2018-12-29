@@ -1,0 +1,26 @@
+table{
+    font-size: 13px;
+    font-family: "Tahoma", monospace;
+    border-spacing: 1px;
+}
+
+.head{
+    color: white;
+    background-color: #687291;
+}
+
+.odd{
+    background-color: #dfe1e7;
+}
+
+.even{
+    background-color: #eeeff2;
+}
+
+.center{
+    text-align: center;
+}
+
+.display{
+    display: none;
+}

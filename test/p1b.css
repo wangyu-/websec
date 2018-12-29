@@ -1,0 +1,22 @@
+table{
+    font-size: 13px;
+    font-family: "Tahoma", monospace;
+    padding: 20px;
+    border: solid 10px #d0d0ff;
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+#spliter{
+    border-top:solid 3px black;
+}
